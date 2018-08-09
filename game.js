@@ -1,6 +1,7 @@
 module.exports = {
   createBoard,
-  initialState
+  initialState,
+  testNeighbours
 }
 const board = []
 const line = []
@@ -23,3 +24,8 @@ function initialState (board) {
   }
   return board
 }
+
+function testNeighbours () {
+
+}
+
