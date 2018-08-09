@@ -25,7 +25,14 @@ function initialState (board) {
   return board
 }
 
-function testNeighbours () {
-
+function testNeighbours (position) {
+  let aliveNeighbours = 0
+  for (let y = 0; y < board.length; y++) {
+    for (let x = 0; x < board[y].length; x++) {
+      if (board[y][x + 1] === 1) {
+        aliveNeighbours++
+        return aliveNeighbours
+      } 
+    }
+  } 
 }
-
