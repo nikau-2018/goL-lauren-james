@@ -1,0 +1,18 @@
+{
+  "name": "gameOfLife",
+  "version": "1.0.0",
+  "description": "'james and lauren game of life'",
+  "main": "index.js",
+  "repository": "https://github.com/nikau-2018/goL-lauren-james.git",
+  "author": "'james and lauren'",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.4.2"
+  }, 
+  "scripts": {
+    "test": "jest --watch --noStackTrace"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
