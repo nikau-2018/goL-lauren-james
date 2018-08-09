@@ -2,9 +2,13 @@ module.exports = {
   createBoard
 }
 
-function createBoard (line) {
+function createBoard (boardSize) {
   const board = []
-  for (let i = 0; i < 3; i++) {
+  const line = []
+  for (let i = 0; i < boardSize; i++) {
+    line.push(0)
+  }
+  for (let i = 0; i < boardSize; i++) {
     board.push(line)
   }
   return board
