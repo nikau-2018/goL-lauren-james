@@ -29,10 +29,12 @@ function testNeighbours (position) {
   let aliveNeighbours = 0
   for (let y = 0; y < board.length; y++) {
     for (let x = 0; x < board[y].length; x++) {
-      if (board[y][x + 1] === 1) {
-        aliveNeighbours++
-        return aliveNeighbours
-      } 
+      if (x === 0) {
+        /* first cell count */
+        if (board[y][x + 1] === 1) {
+          aliveNeighbours++
+        } 
+      else if (x === board.length - 1) {
     }
   } 
 }

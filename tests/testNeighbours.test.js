@@ -5,7 +5,7 @@ test('test neighbouring cells', function () {
   const boardSize = 3
   const emptyBoard = testNeighbours.createBoard(boardSize)
   const aliveBoard = testNeighbours.initialState(emptyBoard)
-  const expected = 1
+  const expected = 8
   // assert
   const actual = testNeighbours.testNeighbours(aliveBoard)
   // act
