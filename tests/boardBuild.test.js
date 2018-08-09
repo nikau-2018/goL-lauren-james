@@ -1,4 +1,4 @@
-const boardBuild = require('../index')
+const boardBuild = require('../game')
 
 test('create board', function () {
   // arrange
