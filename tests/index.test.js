@@ -1,4 +1,4 @@
-const board = require('../index').createBoard
+const boardBuild = require('../index')
 
 test('create board', function () {
   // arrange
@@ -6,7 +6,7 @@ test('create board', function () {
   const board = []
   const expected = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
   // assert
-  const actual = board.createBoard(line)
+  const actual = boardBuild.createBoard(line)
   // act
-  expect(actual).toBe(expected)
+  expect(actual).toEqual(expected)
 })
