@@ -4,7 +4,7 @@ module.exports = {
   testNeighbours
 }
 const board = []
-const line = []
+const line = {}
 
 function createBoard (boardSize) {
   for (let i = 0; i < boardSize; i++) {
@@ -33,8 +33,10 @@ function testNeighbours (position) {
         /* first cell count */
         if (board[y][x + 1] === 1) {
           aliveNeighbours++
-        } 
-      else if (x === board.length - 1) {
+        }
+        else if (x === board.length - 1) {
+        }
+      }
     }
-  } 
+  }
 }
