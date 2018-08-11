@@ -7,10 +7,10 @@ test('test neighbouring cells', function () {
   [ [1, 1, 1, 1],
     [0, 0, 0, 0],
     [1, 1, 1, 1],
-    [0, 0, 0, 0]]
+    [0, 0, 0, 1]]
   const rowIndex = 2
   const colIndex = 2
-  const expected = [0, 0, 0, 1, 1, 0, 0, 0]
+  const expected = 3
   // assert
   const actual = testNeighbours.testNeighbours(rowIndex, colIndex, board)
   // act
