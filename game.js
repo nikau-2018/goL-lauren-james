@@ -42,5 +42,6 @@ function testNeighbours (rowIndex, colIndex, board) {
       }
     }
   }
-  return neighbourArray
+  // count the living cells
+  return neighbourArray.reduce((a, b) => a + b, 0)
 }
